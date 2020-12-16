@@ -99,3 +99,6 @@ Step 3. Network-hook 설치 확인
 ```bash
 $  kubectl rollout restart deployment network-hook-deployment -n hypernet-local-agent-system 
 ```
+## 삭제 가이드
+* 목적: `Network webhook 삭제`
+* 삭제 순서: network-hook yaml 삭제 적용 `kubectl delete -f network-hook.yaml`
