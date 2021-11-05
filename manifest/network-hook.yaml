@@ -64,7 +64,7 @@ spec:
     app: network-hook
 
 ---
-apiVersion: admissionregistration.k8s.io/v1beta1
+apiVersion: admissionregistration.k8s.io/v1
 kind: MutatingWebhookConfiguration
 metadata:
   name: network-hook-webhook-cfg
@@ -78,6 +78,8 @@ webhooks:
       namespace: hypernet-local-agent-system
       path: "/mutate"
     caBundle: <CA_BUNDLE>
+  admissionReviewVersions: ["v1beta1"]
+  sideEffects: None
   rules:
   - operations: ["CREATE", "UPDATE"]
     apiGroups: [""]

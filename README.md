@@ -6,7 +6,7 @@
 
 ## Prerequisites
 1. [Hypernet-Local-Agent](https://github.com/tmax-cloud/install-networkagent)
-    * Network Webhook이 hypernet-local-agent-system namespace에서 동작하기 위해, hypernet-local-agent 설치가 선행되어야 합니다.
+    * Network Webhook이 hypernet-local-agent-system namespace에서 동작하기 위해, hypernet-local-agent-namespace 가 생성되어있어야 합니다.
 
 ## 폐쇄망 설치 가이드
 설치를 진행하기 전 아래의 과정을 통해 필요한 이미지 및 yaml 파일을 준비한다.
