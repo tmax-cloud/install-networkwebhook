@@ -1,12 +1,6 @@
 
 # Network Webhook version 0.1.3 설치 가이드
 
-## 구성 요소 및 버전
-* Network Webhook([tmaxcloudck/network-hook:v0.1.3](https://hub.docker.com/repository/docker/tmaxcloudck/network-hook))
-	* calico default ip pool name이 3.16 버전에서는 "default-ipv4-ippool"이고, 3.17버전에서는 "default-pool"로 변경됨.
-	* calico version 3.16에서는 Network Webhook 0.1.3버전을 사용하고, calico version 3.17에서는 Network Webhook 0.1.4를 사용할 것.
-
-
 ## Prerequisites
 1. [Hypernet-Local-Agent](https://github.com/tmax-cloud/install-networkagent)
     * Network Webhook이 동작하기 위해, hypernet-local-agent-system namespace가 생성되어있어야 합니다.
