@@ -1,5 +1,5 @@
 
-# Network Webhook version 0.1.3 설치 가이드
+# Network Webhook version 0.1.5 설치 가이드
 
 ## Prerequisites
 1. [Hypernet-Local-Agent](https://github.com/tmax-cloud/install-networkagent)
@@ -63,7 +63,15 @@ Step 2. Network-hook 설치
 	    ```bash
 	        kubectl apply -f network-hook.yaml
 	    ```
-
+* 로그 레벨 조정 :
+    * containers 하위에 command 및 args 추가로 로그 레벨 조정 가능
+        ```bash
+	    ...
+	    command: ["/network-hook"]
+            args: ["-v=0"]
+        ```
+    * v=0 or 1로 조절할 수 있으며, 낮을 수록 로그의 양이 줄어듦.
+	
 <h2 id="step3">
 Step 3. Network-hook 설치 확인
 </h2>
