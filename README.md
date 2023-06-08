@@ -10,7 +10,7 @@
 1. **폐쇄망에서 설치하는 경우** 사용하는 image repository에 Agent 설치 시 필요한 이미지를 push한다.     
     * 작업 디렉토리 생성 및 환경 설정
     ```bash
-    $ export NETWORK_HOOK_VERSION=0.1.3
+    $ export NETWORK_HOOK_VERSION=0.1.5
     ```
 
     * 외부 네트워크 통신이 가능한 환경에서 필요한 이미지를 다운받는다.
